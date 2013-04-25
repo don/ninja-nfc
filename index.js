@@ -7,10 +7,10 @@ var Device = require('./lib/device')
 util.inherits(myDriver,stream);
 
 // Our greeting to the user.
-var HELLO_WORLD_ANNOUNCEMENT = {
+var NFC_ANNOUNCEMENT = {
   "contents": [
-    { "type": "heading",      "text": "Hello World Driver Loaded" },
-    { "type": "paragraph",    "text": "The hello world driver has been loaded. You should not see this message again." }
+    { "type": "heading",      "text": "NFC Driver Loaded" },
+    { "type": "paragraph",    "text": "Then NFC driver has been loaded. You should not see this message again." }
   ]
 };
 
@@ -39,7 +39,7 @@ function myDriver(opts,app) {
     // Check if we have sent an announcement before.
     // If not, send one and save the fact that we have.
     if (!opts.hasSentAnnouncement) {
-      self.emit('announcement',HELLO_WORLD_ANNOUNCEMENT);
+      self.emit('announcement', NFC_ANNOUNCEMENT);
       opts.hasSentAnnouncement = true;
       self.save();
     }
