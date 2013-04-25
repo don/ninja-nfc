@@ -1,15 +1,23 @@
 {
-  "name": "nfc-test",
+  "name": "ninja-nfc",
   "version": "0.0.1",
   "dependencies": {
       "nfc": "0.0.4"
   },
-  "description": "test reading a UID from a nfc tag",
+  "description": "Emit event when reading a NFC tag",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
-  "author": "Don Coleman",
+  "repository": {
+     "type": "git",
+     "url": "https://github.com/don/ninja-nfc"
+   },
+   "keywords": [
+     "Ninja",
+     "Blocks",
+     "NFC"
+   ],
+  "author": "Don Coleman <don.coleman@gmail.com>",
   "license": "MIT"
 }
